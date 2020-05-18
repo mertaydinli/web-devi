@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mert AYDINLI</title>
+    <style type="text/css">
+      html {
+    background: url('arkaplan2_1920x1080 (1).jpg') no-repeat center center fixed rgb(0, 0, 0);
+    background-size: cover;
+    }   
+    header{
+        background-color: #111;
+        padding: 10px;
+        text-align: center;
+        font-size: 30px;
+        color: #818181;;          
+    }  
+    body {margin: 0px; padding: 0px;
+        font-family: "lato",sans-serif        
+     }	 
+     .side {         
+         position:fixed;
+         width:0;
+         height:100%;
+         background: #111;
+         left:0;
+         top:0;
+         z-index:1;
+         transition: 0.5s;
+         padding-top:60px;
+         overflow-x:hidden;         
+     }  
+     .side a {        
+         display:block;
+         text-decoration:none;
+         font-size:25px;
+         color:#818181;
+         padding: 8px 8px 8px 32px;
+         transition: 0.3s;
+     }      
+     .side a:hover {
+         
+         color: #f1f1f1;         
+    }
+     
+     .side .kapat {         
+          position:absolute;
+          top:0;
+          right:25px;
+          font-size:36px;        
+     }      
+     #menu {
+          
+         transition: margin-left .5s;
+         padding:16px;
+          
+      }
+            
+    </style>
+</head>
+<body>
+    <header>
+        Web Sayfama Hoşgeldiniz
+    </header>
+   
+	<div class="side" id="side"> 
+        <a href="javascript:" class="kapat" onclick="kapat()">&times;</a>
+        
+        <a href="benkimim.html">Ben Kimim ?</a>
+        <a href="hobilerim.html">Hobilerim</a>
+        <a href="iletişim.html">İletişim</a>
+        
+        
+        </div> 
+          
+        <div id="menu"> 
+        
+        
+        <span style="font-size:32px;cursor:pointer;" onclick="ac();">&#9776;</span>
+        </div>  
+          
+         <script type="text/javascript"> 
+         
+           function ac() {
+               
+               document.getElementById("side").style.width = "300px";
+               document.getElementById("menu").style.marginLeft = "300px";              
+           }
+           
+            function kapat() {
+               
+               document.getElementById("side").style.width = "0";
+               document.getElementById("menu").style.marginLeft = "0";              
+           }                 
+         </script>        
+</body>
+</html>
